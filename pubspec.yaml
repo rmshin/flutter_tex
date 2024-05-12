@@ -7,8 +7,8 @@ version: 4.0.6
 homepage: https://github.com/shah-xad/flutter_tex
 
 environment:
-  sdk: ">=3.2.3 <4.0.0"
-  flutter: ">=1.17.0"
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: '>=1.17.0'
 
 dependencies:
   webview_flutter_plus: ^0.4.4
@@ -167,6 +167,7 @@ flutter:
     - packages/flutter_tex/js/katex/katex.min.css
     - packages/flutter_tex/js/katex/auto-render.min.js
     - packages/flutter_tex/js/katex/mhchem.min.js
+    - packages/flutter_tex/js/katex/marked.min.js
     - packages/flutter_tex/js/katex/fonts/KaTeX_AMS-Regular.ttf
     - packages/flutter_tex/js/katex/fonts/KaTeX_AMS-Regular.woff
     - packages/flutter_tex/js/katex/fonts/KaTeX_AMS-Regular.woff2

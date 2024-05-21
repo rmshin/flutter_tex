@@ -52,8 +52,10 @@
             throwOnError: false,
           });
         }
+        if (typeof marked !== 'undefined') {
+          teXView.innerHTML = marked.parse(teXView.innerHTML);
+        }
 
-        teXView.innerHTML = marked.parse(teXView.innerHTML);
         setTimeout(function () {
           onCompleteCallback();
         }, 100);

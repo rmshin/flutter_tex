@@ -41,15 +41,17 @@
       }
 
       function renderTeXView(onCompleteCallback) {
-        renderMathInElement(teXView, {
-          delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '$', right: '$', display: false },
-            { left: '\\(', right: '\\)', display: false },
-            { left: '\\[', right: '\\]', display: true },
-          ],
-          throwOnError: false,
-        });
+        if (typeof renderMathInElement !== 'undefined') {
+          renderMathInElement(teXView, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$', right: '$', display: false },
+              { left: '\\(', right: '\\)', display: false },
+              { left: '\\[', right: '\\]', display: true },
+            ],
+            throwOnError: false,
+          });
+        }
 
         teXView.innerHTML = marked.parse(teXView.innerHTML);
         setTimeout(function () {
